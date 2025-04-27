@@ -4,11 +4,8 @@ export const Hero = () => {
     return (
       <div className="w-full h-[671px] overflow-hidden">
         
-        <div className="relative w-full h-full">
-          <div className="absolute inset-0 bg-[#4731d3]">
-            <div className="absolute top-0 right-0 w-[30%] h-full bg-[#cbf281]" />
-            <header className='mx-auto h-full p-9 max-w-[1500px]'><p className='text-4xl text-[#cbf281]'>anil</p></header>
-          </div>
+        <div className="relative w-full h-full bg-[linear-gradient(to_right,_#4731d3_70%,_#cbf281_70%)]">
+          
   
           <div className="relative flex items-center justify-between max-w-[1500px] mx-auto h-full px-6">
             <div className="flex flex-col gap-9 max-w-[528px]">
@@ -46,7 +43,7 @@ export const Hero = () => {
               <img
                 className="w-[518px] h-auto object-cover"
                 alt="Developer portrait"
-                src="/hero-right.png"
+                src="#"
               />
             </div>
           </div>

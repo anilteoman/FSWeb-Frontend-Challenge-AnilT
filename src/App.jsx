@@ -1,13 +1,22 @@
 
 
 import './App.css'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Profile from './components/Profile'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
 
 
   return (
     <>
-      <h1 className='text-center p-16 m-auto text-6xl text-white  border-black border-4 bg-blue-700'>Anasayfa Test</h1>
+      <Hero />
+      <Skills />
+      <Profile />
+      <Projects />
+      <Footer />
     </>
   )
 }

@@ -11,7 +11,7 @@ export const Hero = () => {
   
           <div className="relative flex items-center justify-between w-4/6 mx-auto px-6">
             <div className="flex flex-col gap-9 w-3/6 my-30">
-              <h1 className="font-bold text-[60px] text-[#cbf281] font-['Inter',Helvetica]">
+              <h1 className="font-bold text-6xl text-[#cbf281] font-['Inter',Helvetica]">
                 I am a Frontend
                 <br />
                 Developer...

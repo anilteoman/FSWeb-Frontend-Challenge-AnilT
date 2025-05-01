@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className="w-[300px]">
     <div className="flex flex-col items-start gap-6 p-0">
-      <h2 className="font-medium text-white text-3xl font-inter w-full sm:pt-5">
+      <h2 className="font-medium text-white text-3xl font-inter w-full pt-12 sm:pt-0">
         About Me
       </h2>
 

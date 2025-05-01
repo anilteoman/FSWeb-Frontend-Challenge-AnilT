@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className="relative bg-[linear-gradient(to_right,_#3730a3_70%,_#cbf281_70%)]">
           
   
-          <div className="relative flex items-center justify-between w-4/6 mx-auto px-6 sm:w-full">
+          <div className="relative flex items-center justify-between w-full sm:w-4/6 mx-auto px-6">
             <div className="flex flex-col gap-9 w-3/6 my-30">
               <h1 className="font-bold text-6xl text-[#cbf281] font-inter">
                 I am a Frontend
@@ -44,7 +44,7 @@ export const Hero = () => {
             <div className="relative">
             
               <img
-                className="rounded-4xl shadow-2xl sm:w-[200px]"
+                className="rounded-4xl shadow-2xl w-[200px] sm:w-full"
                 alt="resim"
                 src="/aLogo.jpg"
               />

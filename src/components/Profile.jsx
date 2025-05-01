@@ -1,12 +1,15 @@
 import React from "react";
+import AboutMe from "./AboutMe";
+import BasicInfo from "./BasicInfo";
 
 const Profile = () => {
   return (
-    <section className="bg-[#3730a3]">
+    <section className="bg-[#3730a3] ">
       <div className="w-4/6 mx-auto p-6">
+      <div className="my-10">
         <h1 className="text-[#cbf281] font-bold text-6xl">Profile</h1>
         <div className="flex justify-between py-10">
-        <div>isim kısmı</div>
+        <BasicInfo />
         <div className="relative">
             
             <img
@@ -15,7 +18,8 @@ const Profile = () => {
               src="/aLogo.jpg"
             />
           </div>
-        <div>about me kısmı</div>
+          <AboutMe />
+        </div>
         </div>
       </div>
     </section>

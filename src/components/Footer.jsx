@@ -18,7 +18,7 @@ export const Footer = () => {
 
   return (
     <div className="w-full min-h-[454px]">
-      <footer className="w-full h-[454px] bg-[#f9f9f9]">
+      <footer className="w-full h-[454px] bg-white">
         <div className="border-none shadow-none bg-transparent">
           <div className="flex flex-col items-center justify-center h-[290px] gap-6 pt-[84px]">
             <h2 className="font-bold text-[#4731d3] text-5xl leading-[72px]">

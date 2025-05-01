@@ -19,11 +19,11 @@ export const Footer = () => {
     <footer className=" bg-white">
      
         <div className="flex flex-col items-center justify-center  gap-6 my-10">
-          <h2 className="font-bold text-[#3730a3] text-5xl font-['Inter','Helvetica']">
+          <h2 className="font-bold text-[#3730a3] text-5xl font-inter">
             Send me a message!
           </h2>
 
-          <p className="font-normal text-2xl text-center font-['Inter','Helvetica'] ">
+          <p className="font-normal text-2xl text-center font-inter ">
             Got a question or proposal, or just want
             <br />
             to say hello? Go ahead.

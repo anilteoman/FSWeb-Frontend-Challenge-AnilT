@@ -15,7 +15,7 @@ const Switch = () => {
 const StyledWrapper = styled.div`
   /* The switch - the box around the slider */
   .switch {
-    font-size: 17px;
+    font-size: 12px;
     position: relative;
     display: inline-block;
     width: 3.5em;
@@ -37,7 +37,7 @@ const StyledWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(182, 182, 182);
+    background-color: #3730a3;
     transition: .4s;
     border-radius: 10px;
   }

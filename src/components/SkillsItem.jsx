@@ -21,7 +21,7 @@ const SkillsItem = () => {
         },
       ];
   return (
-    <div className="flex gap-20">
+    <div className="flex gap-20 sm:pt-10">
           {skillsData.map((column) => (
             <div
               key={column.column}
@@ -34,7 +34,7 @@ const SkillsItem = () => {
                     alt={item.name}
                     className="w-32 h-32"
                   />
-                  <p className="mt-2 text-sm font-semibold">{item.name}</p>
+                  <p className="mt-2 text-sm font-semibold font-inter">{item.name}</p>
                 </div>
               ))}
             </div>

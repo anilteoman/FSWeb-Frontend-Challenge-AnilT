@@ -9,7 +9,7 @@ const AboutMe = () => {
       </h2>
 
       <div className="flex items-start gap-2.5">
-        <p className='text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto possimus, facilis iste nobis hic sed rerum nesciunt quod facere accusamus numquam velit laudantium impedit sapiente tenetur reiciendis, labore ab libero.</p>  
+        <p className="text-white font-['Inter',Helvetica]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto possimus, facilis iste nobis hic sed rerum nesciunt quod facere accusamus numquam velit laudantium impedit sapiente tenetur reiciendis, labore ab libero.</p>  
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@ const langData = {
     en: "I am a Frontend \n Developer...",
   },
   heroText: {
-    tr: "...sağlam ve ölçeklenebilir, kullanıcı odaklı frontend uygulamaları yapan.",
+    tr: "...sağlam ve ölçeklenebilir, kullanıcı odaklı frontend uygulamaları yaparım.",
     en: "...who likes to craft solid and scaleable frontend products with great user experiences.",
   },
   about: {
@@ -49,8 +49,8 @@ const langData = {
     en: "Bayburt Uni. Mechanical Engineering \n Bachelor's Degree, 2017",
   },
   footerMessage: {
-    tr: "Mesaj Gönder!",
-    en: "Send Message!",
+    tr: "Bana Mesaj Gönder!",
+    en: "Send me a Message!",
   },
   footerText: {
     tr: `Bir sorun ya da teklifin mi var?

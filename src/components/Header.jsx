@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex justify-center gap-6 sm:gap-8 sm:pr-10 items-center ">
           <button
             onClick={() => toggleLang()}
-            className="font-bold text-[#D2D2D2] dark:text-[#D2D2D2] font-inter min-w-[100px]"
+            className=" font-bold text-[#D2D2D2] dark:text-[#D2D2D2] font-inter min-w-[100px]"
           >
             {currentLang === "en" ? (
               <>

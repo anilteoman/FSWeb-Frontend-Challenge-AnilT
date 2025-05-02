@@ -47,7 +47,7 @@ export const Hero = () => {
             <div className="relative">
             
               <img
-                className="rounded-4xl shadow-2xl w-[200px] sm:w-full"
+                className="rounded-4xl shadow-2xl w-[150px] sm:w-full"
                 alt="resim"
                 src="/aLogo.jpg"
               />

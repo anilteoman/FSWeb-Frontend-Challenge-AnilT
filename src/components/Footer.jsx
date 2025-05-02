@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -6,8 +6,12 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 export const Footer = () => {
+
+  const {ceviri} = useContext(LanguageContext);
+
   const socialLinks = [
     { icon: faTwitter, alt: "Twitter" },
     { icon: faCodepen, alt: "Codepen" },
@@ -20,13 +24,11 @@ export const Footer = () => {
      
         <div className="flex flex-col items-center justify-center  gap-6 py-20">
           <h2 className="font-bold text-[#4832D3] text-5xl font-inter">
-            Send me a message!
+            {ceviri("footerMessage")}
           </h2>
 
-          <p className="font-normal text-2xl text-center font-inter dark:text-white ">
-            Got a question or proposal, or just want
-            <br />
-            to say hello? Go ahead.
+          <p className="font-normal text-2xl text-center font-inter whitespace-pre-line dark:text-white ">
+            {ceviri("footerText")}
           </p>
 
           <a

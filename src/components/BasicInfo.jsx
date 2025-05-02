@@ -1,26 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../contexts/LanguageContext';
 
 const BasicInfo = () => {
+  const {ceviri} = useContext(LanguageContext);
     return (
         <div className="w-[300px]">
           <div className="flex flex-col items-start gap-6 p-0">
             <h2 className="font-medium text-white text-3xl leading-7 font-inter w-full">
-              Basic Information
+              {ceviri("info")}
             </h2>
     
             <div className="flex items-start gap-2.5">
               <div className="flex-1">
                 <p className="font-semibold text-[#cbf281] font-inter mb-6">
-                  D. O. B.
+                  {ceviri("dob")}
                 </p>
                 <p className="font-semibold text-[#cbf281] font-inter mb-6">
-                  Residence
+                {ceviri("residence")}
                 </p>
                 <p className="font-semibold text-[#cbf281] font-inter mb-6">
-                  Education Status
+                {ceviri("edStatus")}
                 </p>
                 <p className="font-semibold text-[#cbf281] font-inter mb-6">
-                  Preferred Role
+                {ceviri("prefRole")}
                 </p>
               </div>
     
@@ -32,7 +34,7 @@ const BasicInfo = () => {
                   Trabzon
                 </p>
                 <p className="font-normal text-white font-inter mb-6 w-[300px]">
-                  Bayburt Uni. Mechanical Engineering{"\n"}Bachelor's Degree, 2017
+                {ceviri("uni")}
                 </p>
                 <p className="font-normal text-white font-inter mb-6">
                   Frontend, UI

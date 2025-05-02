@@ -1,8 +1,12 @@
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
 
 
 export const Hero = () => {
+
+  const {ceviri} = useContext(LanguageContext);
 
 
     return (
@@ -14,14 +18,11 @@ export const Hero = () => {
           <div className="relative flex items-center justify-between w-full sm:w-4/6 mx-auto px-6">
             <div className="flex flex-col gap-9 w-3/6 my-30">
               <h1 className="font-bold text-6xl text-[#cbf281] font-inter">
-                I am a Frontend
-                <br />
-                Developer...
+                {ceviri("heroHead")}
               </h1>
   
               <p className="text-2xl text-white font-inter">
-                ...who likes to craft solid and scalable frontend products with
-                great user experiences.
+              {ceviri("heroText")}
               </p>
   
               <div className="flex items-center gap-4">

@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../contexts/LanguageContext';
 
 const AboutMe = () => {
+
+  const {ceviri} = useContext(LanguageContext);
   return (
     <div className="w-[300px]">
     <div className="flex flex-col items-start gap-6 p-0">
       <h2 className="font-medium text-white text-3xl font-inter w-full pt-12 sm:pt-0">
-        About Me
+        {ceviri("about")}
       </h2>
 
       <div className="flex items-start gap-2.5">
-        <p className="text-white font-inter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto possimus, facilis iste nobis hic sed rerum nesciunt quod facere accusamus numquam velit laudantium impedit sapiente tenetur reiciendis, labore ab libero.</p>  
+        <p className="text-white font-inter">{ceviri("aboutText")}</p>  
       </div>
     </div>
   </div>

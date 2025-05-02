@@ -1,70 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 const Switch = () => {
+
+  const {theme , toggleTheme} = useContext(ThemeContext);
   return (
-    <StyledWrapper>
-      <label className="switch">
-        <input type="checkbox" />
-        <span className="slider" />
-      </label>
-    </StyledWrapper>
+    <label className="relative inline-flex items-center cursor-pointer">
+      <input className="sr-only peer" type="checkbox" onClick={()=>toggleTheme()}/>
+      <div className="w-12 h-6 rounded-full bg-gradient-to-r from-yellow-300 to-orange-400 peer-checked:from-slate-400 peer-checked:to-slate-500 transition-all duration-500 after:content-['☀️'] after:absolute after:top-0.5 after:left-1 after:bg-transparent after:rounded-full after:h-5 after:w-5 after:flex after:items-center after:justify-center after:transition-all after:duration-500 peer-checked:after:translate-x-5 peer-checked:after:content-['🌙'] after:shadow-md after:text-lg" />
+      <span className="font-bold text-[#4832D3] dark:text-[#D2D2D2] font-inter pl-2">{theme  === "dark" ? "LIGHT MODE" : "DARK MODE"}</span>
+    </label>
   );
 }
-
-const StyledWrapper = styled.div`
-  /* The switch - the box around the slider */
-  .switch {
-    font-size: 12px;
-    position: relative;
-    display: inline-block;
-    width: 3.5em;
-    height: 2em;
-  }
-
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #3730a3;
-    transition: .4s;
-    border-radius: 10px;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.4em;
-    width: 1.4em;
-    border-radius: 8px;
-    left: 0.3em;
-    bottom: 0.3em;
-    transform: rotate(270deg);
-    background-color: rgb(255, 255, 255);
-    transition: .4s;
-  }
-
-  .switch input:checked + .slider {
-    background-color: #21cc4c;
-  }
-
-  .switch input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-
-  .switch input:checked + .slider:before {
-    transform: translateX(1.5em);
-  }`;
 
 export default Switch;

@@ -1,12 +1,14 @@
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
+
 
 export const Hero = () => {
+
+
     return (
       <div className="w-full overflow-hidden">
         
-        <div className="relative bg-[linear-gradient(to_right,_#3730a3_70%,_#cbf281_70%)]">
+        <div className="bg-[linear-gradient(to_right,_#4832D3_70%,_#cbf281_70%)] dark:bg-[linear-gradient(to_right,_#171043_70%,_#211F0B_70%)]">
           
   
           <div className="relative flex items-center justify-between w-full sm:w-4/6 mx-auto px-6">
@@ -25,7 +27,7 @@ export const Hero = () => {
               <div className="flex items-center gap-4">
                 <a
                   href='https://github.com/anilteoman'
-                  className="bg-white text-[#3730a3] border-[#3730a3] rounded-md pl-3 pr-5 py-3 flex items-center gap-2.5"
+                  className="bg-white text-[#3730a3] border-1 border-[#3730a3] rounded-md pl-3 pr-5 py-3 flex items-center gap-2.5 dark:border-[#FFFFFF] dark:bg-[#252128] dark:text-white"
                 >
                   <FontAwesomeIcon size='xl' icon={faSquareGithub} />
                   <span className="font-medium text-lg ">Github</span>
@@ -33,7 +35,7 @@ export const Hero = () => {
   
                 <a
                   href='https://www.linkedin.com/in/anilteoman/'
-                  className="bg-white text-[#3730a3] rounded-md pl-3 pr-5 py-3 flex items-center gap-2.5"
+                  className="bg-white text-[#3730a3]  border-1 border-[#3730a3] rounded-md pl-3 pr-5 py-3 flex items-center gap-2.5 dark:border-white dark:bg-[#252128] dark:text-white"
                 >
                   <FontAwesomeIcon icon={faLinkedin} size="xl" />
                   <span className="font-medium text-lg">LinkedIn</span>

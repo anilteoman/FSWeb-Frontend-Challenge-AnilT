@@ -1,6 +1,6 @@
 const langData = {
     tr: {
-      langSwitch: "TÜRKÇE'YE GEÇ",
+      langSwitch: "TÜRKÇE",
       darkmode: "KARANLIK MOD",
       heroh1: "Ben bir Frontend Developer'ım...",
     },

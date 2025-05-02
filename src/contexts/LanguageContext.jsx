@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from "react";
 
 const LanguageContext = createContext();
 
-export const LanguageProvider = ({ children }) => {
+export const LanguageContextProvider = ({ children }) => {
   const [language, setLanguage] = useState("tr");
 
   const toggleLanguage = (lang) => {
@@ -17,4 +17,5 @@ export const LanguageProvider = ({ children }) => {
 };
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useLanguage = () => useContext(LanguageContext);

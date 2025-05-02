@@ -34,7 +34,7 @@ const SkillsItem = () => {
                     alt={item.name}
                     className="w-32 h-32"
                   />
-                  <p className="mt-2 text-sm font-semibold font-inter">{item.name}</p>
+                  <p className="mt-2 text-sm font-semibold font-inter dark:text-white">{item.name}</p>
                 </div>
               ))}
             </div>

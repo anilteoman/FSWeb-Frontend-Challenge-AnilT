@@ -4,7 +4,7 @@ import BasicInfo from "./BasicInfo";
 
 const Profile = () => {
   return (
-    <section className="bg-[#3730a3] ">
+    <section className="bg-[#4832D3] dark:bg-[#171043] ">
       <div className="w-full  mx-auto p-6 sm:w-4/6">
       <div className="my-10">
         <h1 className="text-[#cbf281] font-bold text-6xl font-inter">Profile</h1>

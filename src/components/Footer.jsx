@@ -16,14 +16,14 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className=" bg-white">
+    <footer className=" bg-white dark:bg-[#252128]">
      
-        <div className="flex flex-col items-center justify-center  gap-6 my-10">
-          <h2 className="font-bold text-[#3730a3] text-5xl font-inter">
+        <div className="flex flex-col items-center justify-center  gap-6 py-20">
+          <h2 className="font-bold text-[#4832D3] text-5xl font-inter">
             Send me a message!
           </h2>
 
-          <p className="font-normal text-2xl text-center font-inter ">
+          <p className="font-normal text-2xl text-center font-inter dark:text-white ">
             Got a question or proposal, or just want
             <br />
             to say hello? Go ahead.
@@ -31,7 +31,7 @@ export const Footer = () => {
 
           <a
             href="mailto:anilteoman@outlook.com"
-            className="font-medium text-[#3730a3] text-xl tracking-[1.00px] underline w-[269px] text-center"
+            className="font-medium text-[#4832D3] text-xl tracking-[1.00px] underline w-[269px] text-center"
           >
             anilteoman@outlook.com
           </a>
@@ -41,7 +41,7 @@ export const Footer = () => {
               <a
                 key={index}
                 href="#"
-                className="text-black hover:text-[#3730a3] transition-colors"
+                className="text-[#4832D3] hover:text-white transition-colors"
                 aria-label={link.alt}
               >
                 <FontAwesomeIcon icon={link.icon} size="2x" />
